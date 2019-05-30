@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div class="w3-container">
+
+	<div class="w3-bar w3-border w3-black">
+		<a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none
+		w3-text-white w3-hover-text-cyan">Home</a>
+		<a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none
+		w3-text-white w3-hover-text-cyan ">About Us</a>
+		<a href="#" class="w3-bar-item w3-btn w3-mobile w3-hover-none
+		w3-text-white w3-hover-text-cyan">Terms and Conditions</a>
+
+		<div class="w3-dropdown-click">
+
+			<button class="w3-button" onclick="myFunction()"> More <i class="fa fa-caret-down">	
+			</i></button>
+
+			<div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+
+				<a href="#" class="w3-bar-item w3-btn w3-mobile">Laundry Services</a>
+				<a href="#" class="w3-bar-item w3-btn w3-mobile">Uber Eats</a>
+				<a href="#" class="w3-bar-item w3-btn w3-mobile">Day Care Services</a>
+
+			</div>
+
+		</div>
+
+	</div>		
+	
+</div>
+
+<script>
+
+	function myFunction(){
+		var x=document.getElementById('demo');
+		if (x.className.indexOf('w3-show')==-1) {
+			x.className += 'w3-show';
+		} else{
+			x.className = x.className.replace('w3-show',' ');
+		}
+	}
+	
+</script>	
+
+</body>
+
+</html>
